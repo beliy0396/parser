@@ -19,13 +19,13 @@ class Main(ttk.Frame):
         self.tree.column('Дата и время запроса', width=350, anchor=ttk.CENTER)
         self.tree.pack(pady=25)
 
-        get_and_insert_btn = ttk.Button(self, text="Загрузить данные", command=self.get_data)
+        get_and_insert_btn = ttk.Button(self, text="Загрузить данные", bootstyle="secondary", command=self.get_data)
         get_and_insert_btn.pack(side=ttk.LEFT, padx=47, pady=5)
 
-        sort_by_time_new_btn = ttk.Button(self, text="Сортировать(новые записи)", command=self.sort_by_time_new)
+        sort_by_time_new_btn = ttk.Button(self, text="Сортировать(новые записи)", bootstyle="secondary", command=self.sort_by_time_new)
         sort_by_time_new_btn.pack(side=ttk.LEFT, padx=47, pady=5)
 
-        sort_by_time_old_btn = ttk.Button(self, text="Сортировать(старые записи)", command=self.sort_by_time_old)
+        sort_by_time_old_btn = ttk.Button(self, text="Сортировать(старые записи)", bootstyle="secondary", command=self.sort_by_time_old)
         sort_by_time_old_btn.pack(side=ttk.LEFT, padx=47, pady=5)
 
 
