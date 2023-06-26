@@ -31,7 +31,7 @@ class Main(ttk.Frame):
 
 
     def get_data(self):
-        response = requests.get('http://158.160.34.105:5001/logs?')
+        response = requests.get('http://158.160.34.105:5002/logs?')
         data = response.json()
 
         self.db.cur.execute('CREATE TABLE IF NOT EXISTS logs (ip_address TEXT, request_time TEXT)')
